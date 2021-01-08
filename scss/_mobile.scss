@@ -1,0 +1,253 @@
+// XL 1150px
+@include mediaXL{
+    .nav{
+
+        .nav__bar {
+
+            h1{
+                font-size: 3.5rem;
+            }
+
+            .nav__links{
+                font-size: 2.3rem;
+
+                .nav__link {
+                    margin: 0 1.5rem;
+                }
+            }
+
+                
+            .nav__icons{
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+        }
+
+    }
+
+    .main{
+
+        .main__overlay {
+            width: 50rem;
+            height: 30rem;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+
+            .btn-more {
+                font-size: 2.5rem;
+                left: 21%;
+            }
+        }
+    }
+
+
+    .contact {
+
+        .contact__form {
+            
+            h1{
+                font-size: 2.5rem;
+            }
+
+            .card{
+                h2{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+// 950px
+@include mediaLg {
+    .nav{
+
+        .nav__bar {
+
+            h1{
+                font-size: 3rem;
+            }
+
+            .nav__links{
+                font-size: 2rem;
+
+                .nav__link {
+                    margin: 0 1rem;
+                }
+            }
+
+                
+            .nav__icons{
+                font-size: 1.5rem;
+                padding: 1rem 0;
+                
+                i{
+                    margin-left: 2.5rem;
+                }
+            }
+        }
+
+    }
+
+    .main{
+
+        .main__overlay {
+            width: 40rem;
+            height: 20rem;
+
+            h1{
+                font-size: 2.2rem;
+            }
+
+            p{
+                font-size: 1.8rem;
+            }
+
+            .btn-more {
+                font-size: 2.5rem;
+                left: 26%;
+            }
+        }
+    }
+    .footer {
+
+        .footer__copyright{
+            font-size: 1.3rem;
+        }
+
+        .footer__socials {
+
+            h4{
+                font-size: 1.7rem;
+            }
+
+            i{
+                font-size: 2.4rem;
+            }
+        }
+
+        .footer__news{
+            padding-top: .5rem;
+            margin-right: 3rem;
+            input[type="text"] {
+                padding: 1rem 1.5rem;
+            }
+
+            input[type="button"] {
+                padding: .4rem 1rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .products {
+
+        &__heading {
+            .heading__text{
+    
+                .heading__link{
+                    font-size: 2.5rem;
+                }
+    
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    .contact {
+
+        .contact__form {
+            height: 52rem;
+            h1{
+                font-size: 2.2rem;
+            }
+
+            .card{
+                height: 45rem;
+                top: -1.5rem;
+                h2{
+                    margin-bottom: 3rem;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@include mediaMd {
+    .nav{
+        height: 6rem;
+        .nav__bar {
+
+            h1{
+                font-size: 2.3rem;
+            }
+            .nav__links{
+                font-size: 1.7rem;
+
+                .nav__link {
+                    margin: 0 .5rem;
+                }
+            }  
+            .nav__icons{
+                font-size: 1.5rem;
+                padding: 1rem 0;
+                
+                i{
+                    margin-left: 2.2rem;
+                }
+            }
+        }
+    }
+
+    .main{
+
+        .main__overlay {
+            width: 35rem;
+            height: 20rem;
+
+            h1{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.7rem;
+            }
+
+            .btn-more {
+                font-size: 2rem;
+                top: 80%;
+                left: 26%;
+            }
+        }
+    }
+
+    .footer {
+        height: 100%;
+        .footer__content {
+            display: block;
+            text-align: center;
+            padding: 1rem 0;
+
+            .footer__copyright{
+                font-size: 1rem;
+            }
+
+            .footer__socials {
+                
+                h4{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//Colors
+$color-primary: #44d62c;
+$font-primary: #888;
+$font-secondary: #333;
+$white: rgb(255, 255, 255);
+
+
+// hidden checkbox
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.lg {
+    width: 100%;
+}
+

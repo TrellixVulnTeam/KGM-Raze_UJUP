@@ -1,0 +1,106 @@
+.contact {
+    padding-top: 6rem;
+    width: 100%;
+    height: 94vh;
+    background: url(/dist/img/bckg2.png) no-repeat center center/cover;
+    overflow: auto;
+
+    &__info{
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .contact__details {
+            margin-right: 20rem;
+            margin-bottom: 7rem;
+
+            h3{
+                color: $white;
+                font-size: 2rem;
+                line-height: 1.6;
+            }
+            
+            p{
+                font-size: 2rem;
+                color: $white;
+                margin-bottom: 3rem;
+                line-height: 1.6;
+            }
+
+            span{
+                font-size: 2rem;
+                color: $white;
+                line-height: 1.6;
+            }
+        }
+
+
+        .contact__form{
+            position: relative;
+            width: 50rem;
+            height: 65rem;
+            background-color: $color-primary;
+
+            h1{
+                position: absolute;
+                bottom: 100%;
+                color: $color-primary;
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+            }
+
+            .card{
+                position: absolute;
+                left: -5%;
+                width: 45rem;
+                height: 55rem;
+                background-color: $white;
+                margin: 5rem auto;
+                padding: 1rem 5rem;
+
+                h2{
+                    font-size: 4rem;
+                    padding: 2rem 0;
+                    margin-bottom: 5rem;
+                }
+
+                input[type="text"]{
+                    width: 100%;
+                    padding: 1.5rem 2rem;
+                    margin-bottom: 2.5rem;
+                    border-radius: 5rem;
+                    outline: none;
+                    border: 1px solid #999 ;
+                }
+
+                .form__message {
+                    width: 100%;
+                    height: 10rem;
+                    padding: 1rem 2rem;
+                    outline: none;
+                    border: 1px solid #999;
+                    margin-bottom: 2.5rem;
+                }
+
+                input[type="button"] {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 1.5rem 0;
+                    border-radius: 5rem;
+                    background-color: $color-primary;
+                    text-transform: uppercase;
+                    color: $white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
