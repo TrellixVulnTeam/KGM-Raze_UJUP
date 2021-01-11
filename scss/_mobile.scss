@@ -100,6 +100,40 @@
             }
         }
     }
+
+    // Section play
+    .play{
+
+        &__head {
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+        .play__main {
+
+            .play__box{
+
+                .box__image-1 {
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 25rem;
+                    }
+                }
+
+                .box__image-2{
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 25rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // 950px
@@ -270,6 +304,59 @@
 
                         i{
                             padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+     // Section play
+     .play{
+
+        &__head {
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+        .play__main {
+
+            .play__box{
+
+                .box__image-1 {
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 26rem;
+                        margin-left: 27rem;
+                        margin-top: 2rem;
+
+                        h2{
+                            font-size: 2.2rem;
+                        }
+
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+                .box__image-2{
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 25rem;
+                        margin-left: 27rem;
+
+                        h2{
+                            font-size: 2.2rem;
+                        }
+
+                        p{
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -497,6 +584,60 @@
 
                         i{
                             padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+     // Section play
+     .play{
+
+        &__head {
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+        .play__main {
+
+            .play__box{
+
+                .box__image-1 {
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 18rem;
+                        margin-left: 18rem;
+                        margin-top: 2rem;
+
+                        h2{
+                            font-size: 1.7rem;
+                        }
+
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .box__image-2{
+                    align-items: center;
+                    justify-content: center;
+
+                    .box__text{
+                        margin-right: 18rem;
+                        margin-left: 18rem;
+
+                        h2{
+                            font-size: 1.7rem;
+                        }
+
+                        p{
+                            font-size: 1.2rem;
                         }
                     }
                 }

@@ -114,72 +114,70 @@
         background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(/dist/img/bckg2.png)no-repeat center center/cover;
         border-image: 4px solid $color-primary;
 
-        .play__info-left{
-            width: 100%;
+        .play__box {
+            max-width: 100%;
             height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            .img-left{
+
+            .box__image-1 {
+                width: 100%;
                 height: 100%;
-                width: 25%;
-                object-fit: cover;
-                background-position: center;
-                background-size: cover;
-            }
+                display: flex;
+                flex-wrap: wrap;
 
-            .play__details-left {
-                width: 50rem;
-                margin-left: 20rem;
-                padding-top: 8rem;
-                h2{
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                    color: $color-primary;
-                    font-weight: 500;
-                    padding-bottom: 3rem;
+                img{
+                    width: 40rem;
+                    height: 100%;
+                    object-fit: cover;
+                    background-position: center;
+                    background-size: cover;
                 }
 
-                p{
-                    font-size: 2rem;
-                    color: $font-primary;
-                    line-height: 1.4;
+                .box__text{
+                    width: 45rem;
+                    margin-left: 30rem;
+                    margin-top: 10rem;
+                    h2{
+                        font-size: 3rem;
+                        color: $color-primary;
+                    }
+
+                    p{
+                        color: #999;
+                        font-size: 1.8rem;
+                        line-height: 1.6;
+                    }
                 }
             }
 
-        }
-
-        
-        .play__info-right{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-
-            .img-right{
+            .box__image-2 {
+                width: 100%;
                 height: 100%;
-                width: 25%;
-                object-fit: cover;
-                background-position: center;
-                background-size: cover;
-            }
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
-            .play__details-right{ 
-                width: 50rem;
-                margin-left: 20rem;
-                padding-top: 8rem;
-                h2{
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                    color: $color-primary;
-                    font-weight: 500;
-                    padding-bottom: 3rem;
+                img{
+                    width: 40rem;
+                    height: 100%;
+                    object-fit: cover;
+                    background-position: center;
+                    background-size: cover;
                 }
 
-                p{
-                    font-size: 2rem;
-                    color: $font-primary;
-                    line-height: 1.4;
+                .box__text{
+                    width: 45rem;
+                    margin-left: 30rem;
+                    margin-top: 10rem;
+                    h2{
+                        font-size: 3rem;
+                        color: $color-primary;
+                    }
+
+                    p{
+                        color: #999;
+                        font-size: 1.8rem;
+                        line-height: 1.6;
+                    }
                 }
             }
         }
