@@ -3,7 +3,7 @@
     height: 10rem;
     background-color: #222;
 
-    &__content{
+    .footer__content{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -23,7 +23,7 @@
                 text-align: center;
             }
 
-            i{
+            span{
                 text-align: left;
                 color: #444;
                 padding-left: .7rem;
