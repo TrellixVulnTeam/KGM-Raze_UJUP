@@ -4,6 +4,9 @@ Added many new things, and reworked the whole design of other pages.
 Every keyboard/mouse/mousepad was taken from this website https://en.roccat.org/Keyboards
 Made a page about keyboard Vulcan Pro, which has 4 sections about it and it specifications and faq
 
+Home Page with Slide Show
+![Screenshot_2](https://user-images.githubusercontent.com/75215568/106179825-dbc6dc00-619b-11eb-8b5d-08213205d9a6.png)
+
 Products Page
 ![Screenshot_11](https://user-images.githubusercontent.com/75215568/104809149-6f3afd00-57eb-11eb-8db2-c03ef147b756.png)
 
