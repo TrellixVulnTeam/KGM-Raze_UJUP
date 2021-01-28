@@ -2,6 +2,7 @@
 $color-primary: #44d62c;
 $font-primary: #777;
 $font-secondary: #333;
+$font-tertiary: #999;
 $white: rgb(255, 255, 255);
 
 
@@ -17,8 +18,34 @@ $white: rgb(255, 255, 255);
     width: 1px;
 }
 
+// .borderBot{
+//     color: $white !important;
+//     border-bottom: 4px solid $color-primary;
+// }
+
 
 .lg {
     width: 100%;
 }
 
+.animation-left {
+    animation: fromLeft 1s ease-out;
+}
+
+.animation-right {
+    animation: fromRight 1s ease-out;
+}
+
+.animation-pulse {
+    animation: pulse 2s 3;
+}
+
+// images for main__slider
+
+.main__slider:first-child{
+    background: url(/dist/img/slide1.jpg) no-repeat center center/cover;
+}
+
+.main__slider:nth-child(2){
+    background: url(/dist/img/slide2.jpg) no-repeat center center/cover;
+}

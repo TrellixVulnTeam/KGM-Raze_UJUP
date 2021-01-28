@@ -22,49 +22,38 @@
   </head>
   <body>
 
-    <nav class="nav">
-      <div class="nav__bar">
-        <h1>KGM RAZE</h1>
-        <ul class="nav__links">
-          <li class="nav__link">
-            <a href="index.html" class="nav__item" aria-label="home">Home</a>
-          </li>
-          <li class="nav__link">
-            <a href="products.html" class="nav__item" aria-label="products">Products</a>
-            <ul class="dropmenu">
-              <li class="nav__link nav__link-sub">
-                <a href="keyboard.html" class="nav__item" aria-label="keyboards">Keyboards</a>
-              </li>
-              <li class="nav__link nav__link-sub">
-                <a href="mouse.html" class="nav__item" aria-label="gaming mice">Gaming Mice</a>
-                <ul class="dropmenu-sub">
-                  <li class="nav__link">
-                    <a href="#" class="nav__item" aria-label="gaming mice wired">Wired</a>
-                  </li>
-                  <li class="nav__link">
-                    <a href="#" class="nav__item" aria-label="gaming mice wireless">Wireless</a>
-                  </li>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="/dist/img/logo.png" alt="" class="logo">
+      </div>
+      <div class="navbar__container">
+        <ul class="navbar__links">
+          <li class="navbar__item"><a href="index.html" class="navbar__link borderBot">Home</a></li>
+          <li class="navbar__item"><a href="products.html" class="navbar__link">Product</a>
+            <ul class="dropdown">
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Keyboard</a></li>
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Mouse</a>
+                <ul class="dropdown-sub">
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wired</a></li>
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wireless</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li class="nav__link"><a href="about.html" class="nav__item" aria-label="about">About</a></li>
-          <li class="nav__link">
-            <a href="contact.html" class="nav__item" aria-label="contact us">Contact Us</a>
-          </li>
+          <li class="navbar__item"><a href="about.html" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
         </ul>
-        <div class="nav__icons">
-          <i class="fas fa-shopping-cart"></i>
-          <i class="fas fa-user"></i>
-        </div>
+      </div>
+      <div class="navbar__user">
+        <a href="#" class="navbar__account">My Account</a>
+        <span class="fas fa-shopping-cart">Cart</span>
       </div>
     </nav>
 
-
     <section class="products">
       <div class="products__heading">
-        <div class="heading__text">
-          <a href="keyboard.html" class="heading__link" aria-label="Keyboards">Keyboards</i></a>
+        <div class="heading__text animation-left">
+          <a href="keyboard.html" class="heading__link" aria-label="Keyboards">Keyboards</a>
           <p>
             A quality keyboard is vital for both work and play. Whether you’re a
             mechanical purist, a couch <br />gamer, a freak for extra functions
@@ -103,7 +92,7 @@
       </div>
 
       <div class="products__heading">
-        <div class="heading__text">
+        <div class="heading__text animation-right">
           <a href="mouse.html" class="heading__link">Gaming Mice</a>
           <p>
             Our mice feature a reliable build with ergonomic form factors and
@@ -143,7 +132,7 @@
       </div>
 
       <div class="products__heading">
-        <div class="heading__text">
+        <div class="heading__text animation-left">
           <a href="error.html" class="heading__link">Mousepads</a>
           <p>
             A premium gaming surface takes your mouse’s performance to the next
@@ -192,18 +181,17 @@
         </div>
         <div class="footer__socials">
           <h4>Find Us Through</h4>
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x" aria-label="Follow us on Facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x" aria-label="Follow us on Twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram-square fa-2x" aria-label="Follow us on Instagram"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x" aria-label="Check us out on GitHub"></i></a>
         </div>
         <div class="footer__news">
-          <input type="text" placeholder="Subscribe for Newsletter" />
-          <input type="button" value="Submit" />
+          <input type="text" placeholder="Subscribe for Newsletter">
+          <input type="button" value="Submit">
         </div>
       </div>
     </footer>
-
 
   </body>
 </html>

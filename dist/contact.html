@@ -16,38 +16,39 @@
   </head>
   <body>
       
-    <nav class="nav">
-        <div class="nav__bar">
-            <h1>KGM RAZE</h1>
-            <ul class="nav__links">
-                <li class="nav__link"><a href="index.html" class="nav__item">Home</a></li>
-                <li class="nav__link"><a href="products.html" class="nav__item">Products</a>
-                    <ul class="dropmenu">
-                        <li class="nav__link nav__link-sub"><a href="keyboard.html" class="nav__item">Keyboards</a></li>
-                        <li class="nav__link nav__link-sub"><a href="mouse.html" class="nav__item">Mouse Pads</a>
-                            <ul class="dropmenu-sub">
-                                <li class="nav__link"><a href="#" class="nav__item">Aluminium</a></li>
-                                <li class="nav__link"><a href="#" class="nav__item">Fabric</a></li>
-                                <li class="nav__link"><a href="#" class="nav__item">Cloth</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__link"><a href="about.html" class="nav__item">About</a></li>
-                <li class="nav__link"><a href="contact.html" class="nav__item">Contact Us</a></li>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="/dist/img/logo.png" alt="" class="logo">
+      </div>
+      <div class="navbar__container">
+        <ul class="navbar__links">
+          <li class="navbar__item"><a href="index.html" class="navbar__link borderBot">Home</a></li>
+          <li class="navbar__item"><a href="products.html" class="navbar__link">Product</a>
+            <ul class="dropdown">
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Keyboard</a></li>
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Mouse</a>
+                <ul class="dropdown-sub">
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wired</a></li>
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wireless</a></li>
+                </ul>
+              </li>
             </ul>
-            <div class="nav__icons">
-                <i class="fas fa-shopping-cart"></i>
-                <i class="fas fa-user"></i>
-            </div>
-        </div>
+          </li>
+          <li class="navbar__item"><a href="about.html" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar__user">
+        <a href="#" class="navbar__account">My Account</a>
+        <span class="fas fa-shopping-cart">Cart</span>
+      </div>
     </nav>
     
-    <div class="contact">
+    <div class="contact" aria-label="Details about the Company">
       <div class="contact__info">
         <div class="contact__details">
         <h3>KGM Raze</h3>
-        <p>47 Market Street <br>Australia</p>
+        <p class="contact__paragraph">47 Market Street <br>Australia</p>
 
         <span>+61 9 969637777</span>
         <p>kgmraze@gmail.com</p>
@@ -57,31 +58,30 @@
           <div class="card">
             <h2>Contact Us</h2>
             <form  class="form">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Email">
-              <textarea placeholder="Message" class="form__message"></textarea>
-              <input type="button" value="Send Now">
+              <input type="text" placeholder="Name" aria-label="Put your Name Here">
+              <input type="text" placeholder="Email" aria-label="Put your Email Here">
+              <textarea placeholder="Message" class="form__message" aria-label="Leave a comment"></textarea>
+              <input type="button" value="Send Now" class="animation-pulse">
             </form>
           </div>
         </div>
       </div>
     </div>
-
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__copyright">
-          <h3>RAZE.2&copy; By Eror Aleksandar</h3>
+          <h3>KGM RAZE&copy; By Eror Aleksandar</h3>
         </div>
         <div class="footer__socials">
           <h4>Find Us Through</h4>
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x" aria-label="Follow us on Facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x" aria-label="Follow us on Twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram-square fa-2x" aria-label="Follow us on Instagram"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x" aria-label="Check us out on GitHub"></i></a>
         </div>
         <div class="footer__news">
-          <input type="text" placeholder="Subscribe for Newsletter">
-          <input type="button" value="submit">
+          <input type="text" placeholder="Subscribe for Newsletter" aria-label="Subscrie for Newsletter">
+          <input type="button" value="Submit">
         </div>
       </div>
     </footer>

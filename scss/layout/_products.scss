@@ -6,11 +6,10 @@
     position: relative;
 
 
-    &__heading {
-        padding-top: 4rem;
+    .products__heading {
         color: $white;
         width: 141rem;
-        margin: 0 auto;
+        margin: 9rem auto;
 
         .heading__text{
             line-height: 1.6;
@@ -27,6 +26,10 @@
                 
                 &:hover{
                     color: $color-primary;
+                }
+
+                i{
+                    font-size: 2.5rem;
                 }
             }
 
@@ -54,6 +57,7 @@
             margin-right: 9rem;
             margin-bottom: 6rem;
             border-bottom: 10px solid $color-primary;
+            animation: opacity 1s ease;
 
             h3{
                 margin-top: 1rem;

@@ -15,7 +15,6 @@
         justify-content: center;
         flex-wrap: wrap;
 
-
         .contact__details {
             margin-right: 20rem;
             margin-bottom: 5rem;
@@ -27,10 +26,7 @@
             }
             
             p{
-                font-size: 2rem;
-                color: $white;
-                margin-bottom: 3rem;
-                line-height: 1.6;
+
             }
 
             span{
@@ -78,6 +74,10 @@
                     border-radius: 5rem;
                     outline: none;
                     border: 1px solid #999 ;
+
+                    &::placeholder {
+                        color: black;
+                    }
                 }
 
                 .form__message {
@@ -87,6 +87,10 @@
                     outline: none;
                     border: 1px solid #999;
                     margin-bottom: 2.5rem;
+
+                    &::placeholder {
+                        color: black;
+                    }
                 }
 
                 input[type="button"] {
@@ -103,4 +107,10 @@
             }
         }
     }
+}
+.contact__paragraph {
+    font-size: 2rem;
+    color: $white;
+    margin-bottom: 3rem;
+    line-height: 1.6;
 }

@@ -21,64 +21,37 @@
     <title>KGM RAZE</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav__bar">
-        <h1>KGM RAZE</h1>
-        <ul class="nav__links">
-          <li class="nav__link">
-            <a href="index.html" class="nav__item" aria-label="home">Home</a>
-          </li>
-          <li class="nav__link">
-            <a href="products.html" class="nav__item" aria-label="products"
-              >Products</a
-            >
-            <ul class="dropmenu">
-              <li class="nav__link nav__link-sub">
-                <a href="keyboard.html" class="nav__item" aria-label="keyboards"
-                  >Keyboards</a
-                >
-              </li>
-              <li class="nav__link nav__link-sub">
-                <a href="mouse.html" class="nav__item" aria-label="gaming mice"
-                  >Gaming Mice</a
-                >
-                <ul class="dropmenu-sub">
-                  <li class="nav__link">
-                    <a href="#" class="nav__item" aria-label="gaming mice wired"
-                      >Wired</a
-                    >
-                  </li>
-                  <li class="nav__link">
-                    <a
-                      href="#"
-                      class="nav__item"
-                      aria-label="gaming mice wireless"
-                      >Wireless</a
-                    >
-                  </li>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="/dist/img/logo.png" alt="" class="logo">
+      </div>
+      <div class="navbar__container">
+        <ul class="navbar__links">
+          <li class="navbar__item"><a href="index.html" class="navbar__link borderBot">Home</a></li>
+          <li class="navbar__item"><a href="products.html" class="navbar__link">Product</a>
+            <ul class="dropdown">
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Keyboard</a></li>
+              <li class="navbar__item-sub"><a href="keyboard.html" class="navbar__link">Mouse</a>
+                <ul class="dropdown-sub">
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wired</a></li>
+                  <li class="navbar__item"><a href="#" class="navbar__link">Wireless</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li class="nav__link">
-            <a href="about.html" class="nav__item" aria-label="about">About</a>
-          </li>
-          <li class="nav__link">
-            <a href="contact.html" class="nav__item" aria-label="contact us"
-              >Contact Us</a
-            >
-          </li>
+          <li class="navbar__item"><a href="about.html" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
         </ul>
-        <div class="nav__icons">
-          <i class="fas fa-shopping-cart"></i>
-          <i class="fas fa-user"></i>
-        </div>
+      </div>
+      <div class="navbar__user">
+        <a href="#" class="navbar__account">My Account</a>
+        <span class="fas fa-shopping-cart">Cart</span>
       </div>
     </nav>
 
     <section class="head">
       <div class="head__container">
-        <img src="/dist/img/hero.png" alt="" />
+        <img src="/dist/img/hero.png" alt="Vulcan Pro Keyboard" />
         <div class="head__info">
           <div class="head__details">
             <h1>Roccat&reg; <span>Vulcan Pro</span></h1>
@@ -107,7 +80,7 @@
       <div class="play__main">
         <div class="play__box">
           <div class="box__image-1">
-            <img src="/dist/img/details-1.png" alt="" />
+            <img src="/dist/img/details-1.png" alt="Switch Image" />
             <div class="box__text">
               <h2>Optical Speed, Mechanical Feel</h2>
               <p>
@@ -131,7 +104,7 @@
                 ipsam.
               </p>
             </div>
-            <img src="/dist/img/details-2.png" alt="" />
+            <img src="/dist/img/details-2.png" alt="Computer Image" />
           </div>
         </div>
       </div>
@@ -140,7 +113,7 @@
     <!-- section spec -->
     <section class="spec">
       <h1>> Specifications</h1>
-      <div class="spec__info">
+      <div class="spec__info" aria-label="Specifications">
         <div class="spec__name">
           <h3>General</h3>
           <div class="spec__key">
@@ -223,7 +196,7 @@
     </section>
 
     <!-- Section FAQ -->
-    <section class="faq">
+    <section class="faq" aria-label="Frequently Asked Questions">
       <h1>FAQ</h1>
       <div class="faq__container">
         <div class="faq__box">
@@ -279,14 +252,14 @@
         </div>
         <div class="footer__socials">
           <h4>Find Us Through</h4>
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x" aria-label="Follow us on Facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x" aria-label="Follow us on Twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram-square fa-2x" aria-label="Follow us on Instagram"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x" aria-label="Check us out on GitHub"></i></a>
         </div>
         <div class="footer__news">
-          <input type="text" placeholder="Subscribe for Newsletter" />
-          <input type="button" value="Submit" />
+          <input type="text" placeholder="Subscribe for Newsletter">
+          <input type="button" value="Submit">
         </div>
       </div>
     </footer>
