@@ -62,9 +62,9 @@ if(auto){
 // End image slider
 
 // Hamburger Menu
-const menuBtn = document.querySelector('.hamburger');
-const navigation = document.querySelector('.js-navigation');
+// const menuBtn = document.querySelector('.hamburger');
+// const navigation = document.querySelector('.js-navigation');
 
-menuBtn.addEventListener('click', ()=>{
-    navigation.classList.toggle('active');
-})
+// menuBtn.addEventListener('click', ()=>{
+//     navigation.classList.toggle('active');
+// })
