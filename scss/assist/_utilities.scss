@@ -36,9 +36,55 @@ $white: rgb(255, 255, 255);
 // images for main__slider
 
 .main__slider:first-child{
-    background: url(/dist/img/slide1.jpg) no-repeat center center/cover;
+    background: url(../img/slide1.jpg) no-repeat center center/cover;
 }
 
 .main__slider:nth-child(2){
-    background: url(/dist/img/slide2.jpg) no-repeat center center/cover;
+    background: url(../img/slide2.jpg) no-repeat center center/cover;
+}
+
+// images for products__heading
+.products__heading-1{
+    background: url(../img/keyboards.png) no-repeat center center/cover;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid $color-primary;
+}
+
+.products__heading-2{
+    background: url(../img/mouse.png) no-repeat center center/cover;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid $color-primary;
+}
+
+.products__heading-3{
+    background: url(../img/mousepads.png) no-repeat center center/cover;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid $color-primary;
+}
+
+.products__heading-img-1{
+    background: url(../img/keyboards.png) no-repeat center center/cover;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid $color-primary;
+}
+
+.products__heading-img-2{
+    background: url(../img/mouse.png) no-repeat center center/cover;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid $color-primary;
 }

@@ -35,22 +35,32 @@
 
 
     .main{
+        .main__content{
+            left: 9%;
 
-        .main__overlay {
-            width: 50rem;
-            height: 30rem;
-
-            h1{
-                font-size: 3rem;
+            #h1{
+                font-size: 6rem;
             }
 
-            p{
+            #h2{
+                font-size: 6rem;
+            }
+        }
+
+        .main__content-sub{
+            right: 2%;
+
+            #sub-h1{
+                font-size: 2.2rem;
+            }
+
+            #sub-h2{
                 font-size: 2rem;
             }
 
-            .btn-more {
-                font-size: 2.5rem;
-                left: 21%;
+            .btn-buy{
+                font-size: 1.8rem;
+                margin-left: 11rem;
             }
         }
     }
@@ -187,6 +197,61 @@
         }
     }
 
+
+    .main{
+        .main__content{
+            left: 9%;
+
+            #h3{
+                font-size: 1.8rem;
+            }
+
+            #h1{
+                font-size: 4rem;
+            }
+
+            #h2{
+                font-size: 4rem;
+            }
+        }
+
+        .main__content-sub{
+            right: 2%;
+
+            #sub-h1{
+                font-size: 1.8rem;
+            }
+
+            #sub-h2{
+                font-size: 1.5rem;
+            }
+
+            .btn-buy{
+                font-size: 1.7rem;
+                margin-left: 5rem;
+                padding: 1rem 3rem;
+            }
+        }
+
+        .main__content-2{
+            top: 4%;
+
+            #sup-h2{
+                font-size: 1.8rem;
+            }
+
+            #sup-h1{
+                font-size: 6rem;
+            }
+
+            #sup-h3{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+
+
     .footer {
 
         .footer__copyright{
@@ -220,7 +285,7 @@
 
     .products {
 
-        &__heading {
+        .products__heading {
             .heading__text{
     
                 .heading__link{
@@ -314,7 +379,7 @@
      // Section play
      .play{
 
-        &__head {
+        .play__head {
             h2{
                 font-size: 2rem;
             }
@@ -570,7 +635,7 @@
      // Section play
      .play{
 
-        &__head {
+        .play__head {
             h2{
                 font-size: 2rem;
             }

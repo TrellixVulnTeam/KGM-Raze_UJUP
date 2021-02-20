@@ -16,18 +16,20 @@
   </head>
   <body>
         <div class="error">
-            <div class="error__container">
-                <h1>ERROR</h1>
-                <div class="error__image">
-                    <img src="/dist/img/error.png" alt="">
-                </div>
-                <p>Sorry, The Page Not Found</p>
-                <div class="error__text">
-                    <p>Unfortunately, this page does not exist. It was probably deleted or it was never there</p>
-                    <h3>Please go to the main page or use the site map</h3>
-                </div>
-                <a href="index.html" class="btn-home">Go Home</a>
+          <div class="error__container">
+            <img src="../img/error.png" alt="Error Image 404" class="error__img">
+            <p class="error__text">We Are Sorry, But The Page You Requested was not Found</p>
+            <div class="error__buttons">
+              <button class="btn-home" role="button"><a href="index.html" class="error__home">Go Home</a></button>
+              <button class="btn-contact" role="button"><a href="contact.html" class="error__contact">Contact Us</a></button>
             </div>
+            <div class="error__socials">
+              <span class="fab fa-facebook"  aria-label="Go to our Facebook Page"></span>
+              <span class="fab fa-instagram"  aria-label="Go to our Instagram"></span>
+              <span class="fab fa-twitter"  aria-label="Go to our Twitter"></span>
+              <span class="fab fa-linkedin"  aria-label="Go to our Linkedin"></span>
+            </div>
+          </div>
         </div>
   </body>
 </html>

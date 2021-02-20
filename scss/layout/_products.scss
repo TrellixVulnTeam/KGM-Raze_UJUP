@@ -1,43 +1,35 @@
 .products{
     height: 100%;
     width: 100%;
-    background: url(/dist/img/bckg2.png) no-repeat center center/cover;
+    background: url(../img/bckg2.png) no-repeat center center/cover;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 
 
     .products__heading {
+        position: relative;
+    }
+
+    .products__text{
+        width: 30rem;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products__view{
+        position: absolute;
+        top: 50%;
+        right: 12%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        border: 2px solid $white;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+        background: rgba(255,255,255, .1);
         color: $white;
-        width: 141rem;
-        margin: 9rem auto;
-
-        .heading__text{
-            line-height: 1.6;
-            border-left: 8px solid $color-primary;
-
-            .heading__link{
-                color: $white;
-                text-transform: uppercase;
-                font-size: 3rem;
-                font-weight: 100;
-                margin-left: 1rem;
-                text-decoration: none;
-                transition: all .2s ease;
-                
-                &:hover{
-                    color: $color-primary;
-                }
-
-                i{
-                    font-size: 2.5rem;
-                }
-            }
-
-            p{
-                font-size: 1.5rem;
-                margin-left: 1rem;
-            }
-        }
     }
 
     .product__info{
@@ -78,37 +70,47 @@
                 width: 100%;
                 height: 35rem;
             }
-
-            &:hover{
-                box-shadow: 0 0 20px $color-primary;
-            }
+        }
+        .product__card:hover{
+            box-shadow: 0 0 20px $color-primary;
         }
     }
 
     // For Keyboard/Mouse Only Pages
-    &__heading-lg{
-        padding-top: 4rem;
-        color: $white;
-        width: 184rem;
-        margin: 0 auto;
-
-        .heading__text{
-            line-height: 1.6;
-            border-left: 8px solid $color-primary;
-            h2{
-                text-transform: uppercase;
-                font-size: 3rem;
-                font-weight: 100;
-                margin-left: 1rem;
-            }
-
-            p{
-                font-size: 1.5rem;
-                margin-left: 1rem;
-            }
-        }
+    .products{
+        height: 100%;
     }
 
+    .products__heading-lg{
+        position: relative;
+        height: 25rem;
+    }
+
+    .products__heading-img{
+        position: relative;
+        height: 15rem;
+        width: 100%;
+    }
+
+    .products__heading-text{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 30rem;
+    }
+
+    .products__text-lg{
+        height: 5rem;
+        width: 100%;
+        text-align: center;
+
+        p{
+            padding-top: 3rem;
+            word-wrap: break;
+            color: $white;
+            font-size: 2rem;
+        }
+    }
 
     .product__info-lg{
         display: flex;
@@ -116,14 +118,17 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        margin: 5rem auto;
+        height: 100%;
+        margin: 0 auto;
         margin-left: 2rem;
+        background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ),url(../img/bckg2.png) no-repeat center center/cover;
 
         .product__card-lg{
             position: relative;
             background-color: #f2f2f2;
             width: 42rem;
             height: 47rem;
+            margin-top: 3rem;
             margin-right: 5rem;
             margin-bottom: 2rem;
             border-bottom: 10px solid $color-primary;
@@ -147,10 +152,9 @@
                 width: 100%;
                 height: 35rem;
             }
-
-            &:hover{
-                box-shadow: 0 0 20px $color-primary;
-            }
+        }
+        .product__card-lg:hover{
+            box-shadow: 0 0 20px $color-primary;
         }
     }
 }
