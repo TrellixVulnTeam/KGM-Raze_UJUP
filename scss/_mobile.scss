@@ -1,38 +1,97 @@
-// XL 1150px
-@include mediaXL{
-    .navbar{
-
-        .navbar__logo{
-            width: 20%;
-            .logo{
-                width: 20rem;
-            }
-        }
-
-        .navbar__container {
-            width: 80%;
-        }
-
-        .navbar__links{
-            
-            .navbar__link{
-                font-size: 2rem;
-            }
-        }
-
-        .navbar__user{
-
-
-            .navbar__account{
-                font-size: 1.8rem;
-            }
-
-            .fa-shopping-cart{
-                font-size: 1.6rem;
-            }
-        }
+@include mediaXL2{
+    .hamburger-menu{
+        opacity: 1;
+        visibility: visible;
     }
 
+    .navbar__container{
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        height: 100vh;
+        min-height: 100%;
+        width: 30rem;
+        background: #131313;
+        flex-direction: column;
+        justify-content: space-start;
+        transition: right .6s;
+    }
+
+    .change .navbar__container{
+        right: 0;
+    }
+
+    .navbar__links{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .navbar__item{
+        margin: 1rem 0;
+        position: static;
+        text-align: center;
+    }
+
+    .navbar__user{
+        border-left: none;
+        border-top: .1rem solid #222;
+    }
+
+    .dropdown{
+        bottom: 5rem;
+        position: static;
+        display: none;
+        margin: 1rem 0;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: none;
+        border-bottom: none;
+        background: none;
+    }
+
+    .navbar__item:hover .dropdown{
+        display: block;
+    }
+
+    .navbar__item-sub{
+        margin: 3rem 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .dropdown-sub{
+        bottom: 2rem;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        border-bottom: none;
+        background: none;
+    }
+
+    .navbar__item-sub:hover .dropdown-sub{
+        display: block;
+    }
+
+    .navbar__user{
+        height: 30%;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .navbar__account{
+        margin: 2rem 0;
+    }
+}
+
+// XL 1150px
+@include mediaXL{
+    html{
+        font-size: 61%;
+    }
 
     .main{
         .main__content{
@@ -157,44 +216,8 @@
 
 // 950px
 @include mediaLg {
-    .navbar{
-
-        .navbar__logo{
-            width: 10%;
-            margin-left: 0;
-            .logo{
-                width: 15rem;
-                
-            }
-        }
-
-        .navbar__container {
-            width: 70%;
-            justify-content: space-evenly;
-        }
-
-        .navbar__links{
-
-            .navbar__item{
-                margin: 0 2rem;
-            }
-            
-            .navbar__link{
-                font-size: 1.7rem;
-            }
-        }
-
-        .navbar__user{
-            width: 15rem;
-            .navbar__account{
-                font-size: 1.4rem;
-                margin: 0 1rem;
-            }
-
-            .fa-shopping-cart{
-                font-size: 1.3rem;
-            }
-        }
+    html{
+        font-size: 59%;
     }
 
 
@@ -452,11 +475,37 @@
 }
 
 @include mediaMd {
+    html{
+        font-size: 53%;
+    }
+
+    .navbar__container{
+        width: 100vw;
+    }
+
+    .navbar__links{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navbar__item{
+        margin: 1rem 0;
+        position: static;
+        text-align: center;
+    }
+
+    .navbar__user{
+        border-left: none;
+        border-top: .1rem solid #222;
+    }
+
     .main{
 
         .main__overlay {
-            width: 35rem;
-            height: 20rem;
+            width: 100%;
+            height: 100%;
 
             h1{
                 font-size: 2rem;

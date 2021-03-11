@@ -1,3 +1,12 @@
+// Hamburger Menu
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navBar = document.querySelector('.navbar');
+
+hamburgerMenu.addEventListener('click', () =>{
+    navBar.classList.toggle('change');
+    console.log('Changed');
+});
+
 //Image slider 
 const slider = document.querySelectorAll('.main__slider');
 const next = document.querySelector('#nextBtn');
@@ -37,7 +46,7 @@ const prevSlide = () => {
 }
 
 // Button events
-next.addEventListener('click', e => {
+next.addEventListener('click', function(){
     nextSlide();
     if(auto) {
         clearInterval(slideInterval);
@@ -45,7 +54,7 @@ next.addEventListener('click', e => {
     }
 });
 
-prev.addEventListener('click', e => {
+prev.addEventListener('click', function() {
     prevSlide();
     if(auto) {
         clearInterval(slideInterval);
@@ -60,11 +69,3 @@ if(auto){
 }
 
 // End image slider
-
-// Hamburger Menu
-// const menuBtn = document.querySelector('.hamburger');
-// const navigation = document.querySelector('.js-navigation');
-
-// menuBtn.addEventListener('click', ()=>{
-//     navigation.classList.toggle('active');
-// })

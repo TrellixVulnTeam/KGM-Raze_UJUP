@@ -1,3 +1,10 @@
+// 1200px
+@mixin mediaXL2 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
 // 1150px
 @mixin mediaXL {
     @media screen and (max-width: 1150px) {
