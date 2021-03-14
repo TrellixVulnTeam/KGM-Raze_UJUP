@@ -67,5 +67,4 @@ if(auto){
     // run next slide at interval time
     slideInterval = setInterval(nextSlide, intervalTime);
 }
-
 // End image slider
