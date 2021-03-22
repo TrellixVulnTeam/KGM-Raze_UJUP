@@ -320,6 +320,11 @@
                 }
             }
         }
+
+        .product__info-lg{
+            margin-top: 2.5rem;
+            margin-left: 0;
+        }
     }
 
 
@@ -779,6 +784,10 @@
             }
         }
     }
+}
 
-
+@include mediaSm{
+    html{
+        font-size: 40%;
+    }
 }

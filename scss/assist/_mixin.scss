@@ -25,3 +25,9 @@
         @content;
     }
 }
+
+@mixin mediaSm {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
